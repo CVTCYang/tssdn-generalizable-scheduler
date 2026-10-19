@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "o4as"
+version = "0.1.0"
+description = "Incremental no-wait TAS scheduler"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "torch-geometric>=2.5"]
+
+[tool.setuptools.packages.find]
+include = ["o4as*"]
